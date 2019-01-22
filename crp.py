@@ -17,5 +17,5 @@ if select == "d":
 	file = open(str(name), 'r')
 	input = file.read()
 	output = f.decrypt(input)
-	print 'Success! Text is >', str(output)
+	print 'Success! Text is >\n\n', str(output), '\n\n'
 
