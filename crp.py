@@ -3,7 +3,7 @@ select = raw_input("Encrypt or decrypt? e/d > ")
 if select == "e":
 	key = Fernet.generate_key()
 	f = Fernet(key)
-	name = raw_input("Eneter name of the file: ")
+	name = raw_input("Enter name of the file: ")
 	file = open(str(name), 'r')
 	input = file.read()
 	output = f.encrypt(input)
